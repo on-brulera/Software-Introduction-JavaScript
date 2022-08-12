@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos</title>
+    <link rel="stylesheet" href="./estilos.css" />
+    <script src="./variables.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Variables</h1>
+      <div class="vars">
+        <h2 class="var__title">var</h2>
+        <p class="var__paragraph">
+          Las variables declaradas con este término son de ámbito global, pero
+          pueden ser modificadas dentro de bloques, funciones y condicionales
+          (poco recomendable)
+        </p>
+        <code class="ejemplo">
+            <h3>Ejemplo</h3>
+          <pre>
+                var global = "HOLA MUNDO GLOBAL";
+                console.log("global antes del bloque: ", global); // salida: "HOLA MUNDO GLOBAL"
+                {
+                    var global = "HOLA MUNDO GLOBAL DENTRO";
+                    console.log("global dentro del bloque: ", global); //salida: "HOLA MUNDO GLOBAL DENTRO"
+                }
+                console.log("global despues del bloque: ", global); //salida: "HOLA MUNDO GLOBAL DENTRO"
+            </pre
+          >
+        </code>
+      </div>
+
+      <div class="vars">
+        <h2 class="var__title">let</h2>
+        <p class="var__paragraph">
+          Las variables declaradas con este término son de ámbito de bloque, por
+          ello no se ven afectadas si en otras funciones tienen el mismo nombre
+          de variable (recomendable)
+        </p>
+        <code class="ejemplo">
+            <h3>Ejemplo</h3>
+            <pre>
+                let bloque = "HOLA MUNDO BLOQUE";
+                console.log("var_bloque antes del bloque: ", bloque); //salida: "HOLA MUNDO BLOQUE"
+                {
+                    let bloque = "HOLA MUNDO BLOQUE DENTRO";
+                    console.log("var_bloque dentro del bloque: ", bloque); //salida: "HOLA MUNDO BLOQUE DENTRO"
+                }
+                console.log("var_bloque despues del bloque: ", bloque); // salida: "HOLA MUNDO BLOQUE"
+              </pre
+            >
+      </div>
+    </div>
+  </body>
+</html>

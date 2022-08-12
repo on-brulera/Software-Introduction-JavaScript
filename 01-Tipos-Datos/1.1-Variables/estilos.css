@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: garamond;
+}
+
+.container{    
+    width: 95%;    
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    margin: 20px auto;    
+    padding: 0px 30px 30px 25px;
+    border-radius: 10px;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.var__title{
+    padding: 5px;
+}
+
+.var__paragraph{
+    margin: 10px 0px;
+}
+
+.ejemplo{
+    margin: 20px 0px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);    
+}
+
+pre{
+    padding-top: 10px;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    border-radius: 10px;
+}
+
+h3{
+    margin-bottom: 10px;
+}
